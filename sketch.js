@@ -9,12 +9,13 @@ function draw() {
     let min = minute();
     let sec = second();
 
-    background(225);
+    clear();
+    
     textSize(32);
     fill(180);
     text(hr, 10, 30);
-    fill(100);
+    fill(180);
     text(min, 10, 60);
-    fill(0);
+    fill(180);
     text(sec, 10, 90);
 }

@@ -4,10 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>abstract sun moon stars clock</title>
-    <style> body {padding: 0; margin: 0;} </style>
+    <style> body {padding: 0; margin: 0;} 
+    #spacebg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('space.png');
+      z-index: -1;
+    }
+    </style>
     <script src="p5.min.js"></script>
     <script src="sketch.js"></script>
   </head>
   <body>
+    <div id="spacebg"></div>
   </body>
 </html>
