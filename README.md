@@ -8,4 +8,9 @@ I used p5.js and html to complete this project. This resource was especially hel
 - Minutes (in groups of 10 for easy visualization) are represented by stars. So 0-9, 10-19, 20-29, 30-29, 40-49, 50-59 for a total of 6 stars.
 - Seconds are represented by space dust.
 
+3:01am (don't ask me why I am up):
+<img width="1022" alt="Screenshot 2024-01-19 at 3 00 22 AM" src="https://github.com/emiilyxiia/space-clock/assets/122341479/b36a02c6-adf4-40a6-a42a-a72af6974dc0">
+
+3:01pm (will be updated, but this will be a blue moon):
+
 Enjoy!
