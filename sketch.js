@@ -52,7 +52,12 @@ function drawHour(hr){
         let x = (0.5 + i) * width / 12;
         circle(x, 150, 75);
         fill(0);
-        ellipse(x - 15, 150, 50)
+        stroke(255);
+        circle(x - 14, 150, 50)
+
+        stroke(0, 100);
+        circle(x - 15, 150, 50)
+        
     }
 }
 
