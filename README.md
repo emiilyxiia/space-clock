@@ -1,5 +1,5 @@
 ## A Data Visualization Project! ##
-The aim of this project is to provide a creative way to read a clock, accurate within a quarter hour. 
+The aim of this project is to provide a creative way to read a clock, accurate within a quarter hour (EST)
 Access it here: https://emiilyxiia.github.io/space-clock/
 
 I used p5.js and html to complete this project. This resource was especially helpful: https://p5js.org/
