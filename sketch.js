@@ -16,21 +16,13 @@ function draw() {
 
     drawHour(hr);
     drawMin(min);
-    //drawSec(sec);
+    drawSec(sec);
 
     //print minute to console when it changes
     if(min != prevMin){
         console.log(min);
         prevMin = min;
     }
-    
-    textSize(32);
-    fill(180);
-    text(hr, 10, 30);
-    fill(180);
-    text(min, 10, 60);
-    fill(180);
-    text(sec, 10, 90);
 }
 
 function drawHour(hr){
@@ -91,5 +83,29 @@ function drawMin(min){
         fill(255);
         rect(-25, -25, 50, 50);
         pop();
+    }
+}
+
+function drawSec(sec){
+    //draw one large box
+        stroke(255);
+        fill(0);
+        rect(0, 500, width, 200);
+
+    //divide space
+    let rows = 6;
+    let cols = 10;
+    let xSpacing = (width - 20) / cols;
+    let ySpacing = 200 / rows;
+
+    //tiny circles as stars, each second passes add another dot. Random dots within the box
+    for(let i = 0; i < sec; i++){
+        let row = Math.floor(i / cols);
+        let col = i % cols;
+
+        fill('lightblue');
+        let x = col * xSpacing + 55;
+        let y = row * ySpacing + 518;
+        circle(x, y, 10);
     }
 }
