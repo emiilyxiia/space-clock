@@ -58,22 +58,19 @@ function drawHour(hr){
 
 function drawMin(min){
     //draw 6 boxes: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59)
-    for(let i = 0; i<5; i++){
+    for(let i = 0; i<6; i++){
         stroke(255);
         fill(0);
-        rect(i*(width)/5, 300, width/5, 100);
+        rect(i*(width)/6, 300, width/6, 100);
     }
 
     let minGroup = Math.floor(min / 10);
-    if(minGroup === 0){
-        minGroup = 1;
-    }
 
     //sparkle stars (rotated rectangles) increase
-    for(let i = 0; i < minGroup; i++){
+    for(let i = 0; i <= minGroup; i++){
 
         fill(255);
-        let x = (0.5 + i) * width / 5;
+        let x = (0.5 + i) * width / 6;
         
         rect(x-25, 325, 50, 50);
 
